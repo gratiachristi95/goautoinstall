@@ -1,17 +1,46 @@
 # Go Auto Install
-Install Go automatically on linux and remove the install file
 
-1) Git Clone Repo
+This guide provides instructions for automatically installing Go on Linux systems and removing the installation file.
 
-2) cd into directory
+## Prerequisites
 
-3) Make file executable by:
-   chmod +x ./install.sh
+- Git installed on your system
+- Terminal access
 
-4) Run ./install.sh
-   
-5) Run export PATH=$PATH:/usr/local/go/bin
+## Installation Steps
 
-6) Type go and hit enter
+1.  Clone the repository:
+    ```
+    git clone [repository URL]
+    ```
 
-7) If instructions come up it is installed
+2.  Navigate to the cloned directory:
+    ```
+    cd [repository name]
+    ```
+
+3.  Make the installation script executable:
+    ```
+    chmod +x ./install.sh
+    ```
+
+4.  Execute the installation script:
+    ```
+    ./install.sh
+    ```
+
+5.  Update your system's PATH to include Go binaries:
+    ```
+    export PATH=$PATH:/usr/local/go/bin
+    ```
+
+6.  Verify the installation:
+    ```
+    go
+    ```
+
+7.  If Go is successfully installed, you will see the Go command usage instructions.
+
+## Note
+
+Ensure you have the necessary permissions to execute these commands. If you encounter any issues, please consult the official Go documentation or seek assistance from your system administrator.
